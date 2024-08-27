@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Ghetto, Become more..., Athletic, Trendy, Yourself, Find your Category:">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Checkout</title>
+
+  <link rel="stylesheet" href="style-Comfirmation.css" media="screen">
+
+  <!-- <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script> -->
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lobster:400|Oswald:200,300,400,500,600,700">
+  <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script>
+    var stripePublicKey = '<%= stripePublicKey %>'
+  </script>
+  <script src="Checkout.js" defer></script>
+  <!-- <script src="store.js" defer></script> -->
+
+
+  <!-- <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/Capture.PNG",
+		"sameAs": [
+				"https://facebook.com/name",
+				"https://twitter.com/name",
+				"https://www.instagram.com/name"
+		]
+}</script> -->
+  <!-- <meta name="theme-color" content="#478ac9">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website"> -->
+</head>
+
+<body>
+
+  <div class="navbar-center">
+    <span class="nav-icon">
+      <i></i>
+    </span>
+    <img src="./Images/Logo.PNG" alt="store logo" width="140" height="145" style="padding-left:25px ;" />
+    <div class="cart-btn">
+      <span class="nav-icon">
+        <i class="fa fa-cart"></i>
+      </span>
+      <!-- <img src ="./images/cart.PNG" alt="cart" width="50" height="50"/> -->
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <div class="title-color">
+          <h2 class="title">Checkout!</h2>
+        </div>
+        <div class="stepper-wrapper">
+          <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+            <div class="step-name">Cart</div>
+          </div>
+          <div class="stepper-item completed">
+            <div class="step-counter">2</div>
+            <div class="step-name">Confirmation</div>
+          </div>
+          <div class="stepper-item active ">
+            <div class="step-counter">3</div>
+            <div class="step-name">Purchase</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">4</div>
+            <div class="step-name">Finish</div>
+          </div>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <h2 class="cart-total-title">Total: <span class="cart-total-price">0€</span></h2>
+        </div>
+        <div class="btn-pos">
+          <button class="btn btn-primary btn-purchase">Purchase</button>
+        </div>
+
+      </div>
+      <div class="panel-footer">
+        <button class="btn back-btn">Back</button>
+        <button class="btn next-btn">Next Step</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

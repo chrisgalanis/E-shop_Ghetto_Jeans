@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "hoodie",
+      "price": 1000,
+      "imgName": "product1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "dress",
+      "price": 1000,
+      "imgName": "product2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "hat",
+      "price": 1000,
+      "imgName": "product3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "children's hoodie",
+      "price": 1000,
+      "imgName": "product4.jpg"
+    }
+  ]
+  
+}
